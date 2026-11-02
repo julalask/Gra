@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#5faee4">
+  <meta name="description" content="Pies Budowlany - urodzinowa gra platformowa. Jeden poziom, 500 punktów i prezent!">
+  <title>Pies Budowlany - Misja Urodzinowa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <div class="game-shell" id="shell">
+      <canvas id="game" width="960" height="540" role="img" aria-label="Gra Pies Budowlany, platformówka: zbieraj beton, skacz i znajdź prezent po zdobyciu 500 punktów"></canvas>
+      <div class="touch-ui" id="touch-ui" aria-label="Sterowanie dotykowe">
+        <div class="touch-left">
+          <button type="button" class="control" data-control="left" aria-label="Idź w lewo">◀</button>
+          <button type="button" class="control" data-control="right" aria-label="Idź w prawo">▶</button>
+        </div>
+        <div class="touch-right">
+          <button type="button" class="control jump" data-control="jump" aria-label="Skok">SKOK ↥</button>
+        </div>
+      </div>
+      <div class="rotate-tip" id="rotate-tip">📱 Obróć telefon poziomo - będzie wygodniej grać!</div>
+    </div>
+    <p class="below">🐾 Komputer: <strong>← →</strong> lub <strong>A / D</strong> - ruch, <strong>Spacja / ↑</strong> - skok, <strong>P</strong> - pauza. Telefon: przyciski na ekranie.</p>
+  </main>
+  <script src="game.js?v=trawa-v13" defer></script>
+</body>
+</html>
